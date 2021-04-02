@@ -1,16 +1,23 @@
 var searchBtn = $('button');
 var inputEl = $('.form-control');
 var cityName = "London";
-var searchHistory = JSON.parse(localStorage.getItem("search"))
+var searchHistory = JSON.parse(localStorage.getItem("search"));
+var searchHistory = searchHistory.slice(0,5);
 if(!searchHistory){
   var searchHistory = [];
-} 
+}else{
+  generateHistory();
+}
+
 // Search Function
+// execute getWeather function then add it to the search history
+// Still need to check if the city really exists
 function searchCity() {
   var cityName = inputEl.val();
   getWeather(cityName);
-  searchHistory.push(cityName);
+  searchHistory.unshift(cityName);
   localStorage.setItem("search",JSON.stringify(searchHistory));
+  generateHistory();
 }
 
 // Fetch the API
@@ -26,4 +33,15 @@ function getWeather(cityName) {
       });
 }
 
+//Generate the last 5 cities searched
+//Make them clickable ?
+function generateHistory(){
+  $('ul').html("");
+  for(i=0; i<searchHistory.length; i++){
+    var historyEl = $("<li>");
+    historyEl.addClass("list-group-item").text(searchHistory[i]);
+    $('ul').append(historyEl)
+  }
+  
+}
 searchBtn.on('click', searchCity);
