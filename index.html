@@ -11,6 +11,8 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
+
+    <!-- Jumbotron Header -->
     <div class="jumbotron jumbotron-fluid bg-dark text-light">
       <div class="container text-center">
         <h1>
@@ -19,9 +21,46 @@
       </div>
     </div>
 
+    <!-- Main body -->
+    <main class="container">
+
+      <section class="row">
+        <!-- Search API -->
+        <div class="col-12 col-md-3">
+          Search part
+        </div>
+        <div class="col-12 col-md-8">
+          <!-- Today's result -->
+          <div class="row">
+            Today's weather
+          </div>
+          <!-- 5 Days Forecast -->
+          5-Day Forecast:
+          <div class="row">
+            <div class="card">
+              Day +1 Forecast
+            </div>
+            <div class="card">
+              Day +2 Forecast
+            </div>
+            <div class="card">
+              Day +3 Forecast
+            </div>
+            <div class="card">
+              Day +4 Forecast
+            </div>
+            <div class="card">
+              Day +5 Forecast
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- jQuery, Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
