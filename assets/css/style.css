@@ -6,3 +6,12 @@
   padding: 10px;
 }
 
+.icon {
+  position: absolute;
+  margin-top: -90px;
+  margin-left:-40px;
+}
+
+.cityName{
+  padding-left:50px;
+}
