@@ -37,33 +37,44 @@
           </div>
 
           <!-- Search History -->
-          <ul class="list-group">
+          <!-- https://getbootstrap.com/docs/4.2/components/list-group/ docs to activate links if needed -->
+          <ul class="list-group mb-3">
             <li class="list-group-item">Search history here</li>
           </ul>
         </div>
         <div class="col-12 col-md-8">
           <!-- Today's result -->
           <div class="row">
-            Today's weather
+            <div class="jumbotron col-12">
+              <div class="container">
+                <h2 class="display-5">City name + date</h2>
+                <p>Temperature</p>
+              </div>
+            </div>
           </div>
           <!-- 5 Days Forecast -->
-          5-Day Forecast:
-          <div class="row">
-            <div class="card">
-              Day +1 Forecast
+          <h4>5-Day Forecast:</h4>
+          <div class="row justify-content-around card-deck">
+            <div class="card text-white bg-primary mb-3 col pt-2">
+                <h5 class="card-title">Date</h5>
+                <p>temp</p>
             </div>
-            <div class="card">
-              Day +2 Forecast
-            </div>
-            <div class="card">
-              Day +3 Forecast
-            </div>
-            <div class="card">
-              Day +4 Forecast
-            </div>
-            <div class="card">
-              Day +5 Forecast
-            </div>
+            <div class="card text-white bg-primary mb-3 col pt-2">
+              <h5 class="card-title">Date</h5>
+              <p>temp</p>
+          </div>
+          <div class="card text-white bg-primary mb-3 col pt-2">
+            <h5 class="card-title">Date</h5>
+            <p>temp</p>
+        </div>
+        <div class="card text-white bg-primary mb-3 col pt-2">
+          <h5 class="card-title">Date</h5>
+          <p>temp</p>
+      </div>
+      <div class="card text-white bg-primary mb-3 col pt-2">
+        <h5 class="card-title">Date</h5>
+        <p>temp</p>
+    </div>
           </div>
         </div>
       </section>
