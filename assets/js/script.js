@@ -74,7 +74,7 @@ function getWeather(cityName) {
           // Return the result on the DOM
           for(i=0; i<5; i++){
             var card = $("<div>");
-            card.addClass("card text-white bg-primary mb-3 col pt-2");
+            card.addClass("card text-white bg-primary mb-3 p-2");
             $('.forecast').append(card);
 
             var name = $("<h5>");
