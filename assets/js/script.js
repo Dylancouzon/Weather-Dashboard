@@ -138,7 +138,7 @@ function generateHistory(){
     var historyEl = $("<li>");
     historyEl.addClass("list-group-item").text(searchHistory[i]);
     $('ul').append(historyEl)
-  } 
+  }
   
 }
 searchBtn.on('click', searchCity);
