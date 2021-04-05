@@ -10,7 +10,6 @@ if(!searchHistory){
 
 // Search Function
 // execute getWeather function then add it to the search history
-// BUG need to check if the city really exists
 function searchCity() {
   var cityName = inputEl.val();
   getWeather(cityName);
@@ -51,8 +50,17 @@ function getWeather(cityName) {
 
         // call UV index function
         getUV(data.coord.lon, data.coord.lat);
+        
+      })
 
+      // Render an error message if the city isn't found
+      .catch((error) => {
+        $(".mainResult").html("");
+        var error = $("<h2>");
+        error.html("City not found");
+        $('.mainResult').append(error);
       });
+
 
       //Forecast for the next 5 days
       var ForecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&units=imperial&appid=7e3a149deb7dcf451641dcd1d05f5cd5";
