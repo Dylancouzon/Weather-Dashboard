@@ -1,6 +1,8 @@
 # Weather Dashboard
 Homework due 2021-4-5
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![Site](./assets/screenshot.png)
 
 ## Technologies Used
