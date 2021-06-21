@@ -51,7 +51,7 @@ This function that I created allowed me to store only the 5 most recent searches
 
 ## Deployed Link
 
-[See Live Site](https://dylancouzon.github.io/Portfolio-2/)
+[See Live Site](https://dylancouzon.github.io/Weather-Dashboard/)
 
 <br>
 <hr>
